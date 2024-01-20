@@ -19,7 +19,7 @@ spec:                               # The official specification matching object
         readinessProbe:             # Periodic probe of container readiness. Container will be removed from endpoints if not ready
           tcpSocket:                # tcpSocket is the action "type" of the probe
             port: 80                # Number of port to open a connection to
-          initialDelaySeconds: 10   # Number of seconds to wait before probing
+          initialDelaySeconds: 20   # Number of seconds to wait before probing
           periodSeconds: 10         # How often to perform probe check
         livenessProbe:              # Periodic probe of container readiness. Container will be removed from endpoints if not "alive"
           tcpSocket:                # tcpSocket is the action "type" of the probe
