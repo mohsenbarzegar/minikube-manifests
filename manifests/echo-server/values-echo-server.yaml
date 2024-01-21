@@ -1,5 +1,5 @@
 # replicaCount -- Pod replicas
-replicaCount: 1
+replicaCount: 2
 
 image:
   # image.repository -- https://hub.docker.com/r/ealen/echo-server
@@ -55,8 +55,8 @@ livenessProbe:
   httpGet:
     path: /ping
     httpHeaders:
-    - name: x-echo-code
-      value: "200"
+      - name: x-echo-code
+        value: "200"
   initialDelaySeconds: 5
   periodSeconds: 10
   timeoutSeconds: 2
